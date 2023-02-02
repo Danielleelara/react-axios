@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import blogFetch from '../axios/config';
@@ -31,7 +30,7 @@ const Home = () => {
           <div className='post' key={post.id}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-            <Link to={`/posts/${post.id}`} className='btn'>Ler mais</Link>
+            <Link to={`/details/${post.id}`} className='btn'>Ler mais</Link>
           </div>))
         )}
     </div>
